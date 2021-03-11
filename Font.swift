@@ -37,6 +37,7 @@ enum Font: String {
     case Bold = "Binggrae-Bold"
     func of(size: CGFloat) -> UIFont {
         guard let font = UIFont(name: self.rawValue, size: size) else {
+            print("Warning...: Not load custom font.")
             return UIFont.systemFont(ofSize: size)
         }
         return font
