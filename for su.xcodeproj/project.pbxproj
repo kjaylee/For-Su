@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		A49F157A25F9C4C8005B1453 /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A49F157825F9C4C8005B1453 /* Binggrae-Bold.ttf */; };
 		A49F157B25F9C4C8005B1453 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A49F157925F9C4C8005B1453 /* Binggrae.ttf */; };
 		A49F158625F9C6B6005B1453 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F158525F9C6B6005B1453 /* Font.swift */; };
+		A49F158F25F9CA5B005B1453 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A49F158E25F9CA5B005B1453 /* Lottie */; };
+		A49F159425F9CA85005B1453 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A49F159325F9CA85005B1453 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		A49F157825F9C4C8005B1453 /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Binggrae-Bold.ttf"; sourceTree = "<group>"; };
 		A49F157925F9C4C8005B1453 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
 		A49F158525F9C6B6005B1453 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = SOURCE_ROOT; };
+		A49F159325F9CA85005B1453 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B4D228B8E10BEB3756537BA4 /* Pods-for suTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-for suTests.release.xcconfig"; path = "Target Support Files/Pods-for suTests/Pods-for suTests.release.xcconfig"; sourceTree = "<group>"; };
 		D72312277AF42FC8D1E6F43E /* Pods-for suTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-for suTests.debug.xcconfig"; path = "Target Support Files/Pods-for suTests/Pods-for suTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA37779AFE31681A6F8485C7 /* Pods-for su-for suUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-for su-for suUITests.release.xcconfig"; path = "Target Support Files/Pods-for su-for suUITests/Pods-for su-for suUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1511A7E760D68A14A4A13213 /* Pods_for_su.framework in Frameworks */,
+				A49F158F25F9CA5B005B1453 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,7 @@
 		A49F14F725F9BB05005B1453 = {
 			isa = PBXGroup;
 			children = (
+				A49F159325F9CA85005B1453 /* README.md */,
 				A49F150225F9BB05005B1453 /* for su */,
 				A49F151925F9BB06005B1453 /* for suTests */,
 				A49F152425F9BB06005B1453 /* for suUITests */,
@@ -235,6 +240,9 @@
 			dependencies = (
 			);
 			name = "for su";
+			packageProductDependencies = (
+				A49F158E25F9CA5B005B1453 /* Lottie */,
+			);
 			productName = "for su";
 			productReference = A49F150025F9BB05005B1453 /* for su.app */;
 			productType = "com.apple.product-type.application";
@@ -309,6 +317,9 @@
 				Base,
 			);
 			mainGroup = A49F14F725F9BB05005B1453;
+			packageReferences = (
+				A49F158D25F9CA5B005B1453 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A49F150125F9BB05005B1453 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -325,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49F159425F9CA85005B1453 /* README.md in Resources */,
 				A49F151025F9BB06005B1453 /* LaunchScreen.storyboard in Resources */,
 				A49F150D25F9BB06005B1453 /* Assets.xcassets in Resources */,
 				A49F157B25F9C4C8005B1453 /* Binggrae.ttf in Resources */,
@@ -801,6 +813,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A49F158D25F9CA5B005B1453 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A49F158E25F9CA5B005B1453 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A49F158D25F9CA5B005B1453 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A49F14F825F9BB05005B1453 /* Project object */;
 }
