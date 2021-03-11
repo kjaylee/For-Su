@@ -18,6 +18,9 @@
 		A49F151025F9BB06005B1453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49F150E25F9BB06005B1453 /* LaunchScreen.storyboard */; };
 		A49F151B25F9BB06005B1453 /* for_suTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F151A25F9BB06005B1453 /* for_suTests.swift */; };
 		A49F152625F9BB06005B1453 /* for_suUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F152525F9BB06005B1453 /* for_suUITests.swift */; };
+		A49F157A25F9C4C8005B1453 /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A49F157825F9C4C8005B1453 /* Binggrae-Bold.ttf */; };
+		A49F157B25F9C4C8005B1453 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A49F157925F9C4C8005B1453 /* Binggrae.ttf */; };
+		A49F158625F9C6B6005B1453 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F158525F9C6B6005B1453 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		A49F152125F9BB06005B1453 /* for suUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "for suUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49F152525F9BB06005B1453 /* for_suUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = for_suUITests.swift; sourceTree = "<group>"; };
 		A49F152725F9BB06005B1453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49F157825F9C4C8005B1453 /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Binggrae-Bold.ttf"; sourceTree = "<group>"; };
+		A49F157925F9C4C8005B1453 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
+		A49F158525F9C6B6005B1453 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = SOURCE_ROOT; };
 		B4D228B8E10BEB3756537BA4 /* Pods-for suTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-for suTests.release.xcconfig"; path = "Target Support Files/Pods-for suTests/Pods-for suTests.release.xcconfig"; sourceTree = "<group>"; };
 		D72312277AF42FC8D1E6F43E /* Pods-for suTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-for suTests.debug.xcconfig"; path = "Target Support Files/Pods-for suTests/Pods-for suTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA37779AFE31681A6F8485C7 /* Pods-for su-for suUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-for su-for suUITests.release.xcconfig"; path = "Target Support Files/Pods-for su-for suUITests/Pods-for su-for suUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,13 +145,11 @@
 		A49F150225F9BB05005B1453 /* for su */ = {
 			isa = PBXGroup;
 			children = (
-				A49F150325F9BB05005B1453 /* AppDelegate.swift */,
-				A49F150525F9BB05005B1453 /* SceneDelegate.swift */,
-				A49F150725F9BB05005B1453 /* ViewController.swift */,
-				A49F150925F9BB05005B1453 /* Main.storyboard */,
-				A49F150C25F9BB06005B1453 /* Assets.xcassets */,
-				A49F150E25F9BB06005B1453 /* LaunchScreen.storyboard */,
-				A49F151125F9BB06005B1453 /* Info.plist */,
+				A49F158425F9C689005B1453 /* Utils */,
+				A49F158325F9C67B005B1453 /* Splash */,
+				A49F157F25F9C63C005B1453 /* Main */,
+				A49F157425F9BD68005B1453 /* Root */,
+				A49F157325F9BD51005B1453 /* Resources */,
 			);
 			path = "for su";
 			sourceTree = "<group>";
@@ -166,6 +170,51 @@
 				A49F152725F9BB06005B1453 /* Info.plist */,
 			);
 			path = "for suUITests";
+			sourceTree = "<group>";
+		};
+		A49F157325F9BD51005B1453 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A49F157825F9C4C8005B1453 /* Binggrae-Bold.ttf */,
+				A49F157925F9C4C8005B1453 /* Binggrae.ttf */,
+				A49F150C25F9BB06005B1453 /* Assets.xcassets */,
+				A49F150E25F9BB06005B1453 /* LaunchScreen.storyboard */,
+				A49F151125F9BB06005B1453 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A49F157425F9BD68005B1453 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A49F150325F9BB05005B1453 /* AppDelegate.swift */,
+				A49F150525F9BB05005B1453 /* SceneDelegate.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		A49F157F25F9C63C005B1453 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A49F150725F9BB05005B1453 /* ViewController.swift */,
+				A49F150925F9BB05005B1453 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A49F158325F9C67B005B1453 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A49F158425F9C689005B1453 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A49F158525F9C6B6005B1453 /* Font.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +327,8 @@
 			files = (
 				A49F151025F9BB06005B1453 /* LaunchScreen.storyboard in Resources */,
 				A49F150D25F9BB06005B1453 /* Assets.xcassets in Resources */,
+				A49F157B25F9C4C8005B1453 /* Binggrae.ttf in Resources */,
+				A49F157A25F9C4C8005B1453 /* Binggrae-Bold.ttf in Resources */,
 				A49F150B25F9BB05005B1453 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +460,7 @@
 				A49F150825F9BB05005B1453 /* ViewController.swift in Sources */,
 				A49F150425F9BB05005B1453 /* AppDelegate.swift in Sources */,
 				A49F150625F9BB05005B1453 /* SceneDelegate.swift in Sources */,
+				A49F158625F9C6B6005B1453 /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
